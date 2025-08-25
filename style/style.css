@@ -1,0 +1,321 @@
+:root {
+    --normal-font: 400;
+    --bold-font: 600;
+    --bolder-font: 900;
+    --primary-color: #0652dd;
+    --secondary-color: #ea2027;
+    --line-height: 1.7rem;
+    --transition: 0.4s ease-in;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+
+body {
+    position: relative;
+    font-family: "Times New Roman", Times, serif;
+    background-image: url('../pics/background/background-white.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo h1 {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navigat ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navline {
+    display: none;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    /* color: Navy; */
+}
+
+a:hover {
+    text-decoration: none;
+    /* color: Blue; */
+}
+
+nav {
+    background-color: rgb(255,255,255,0.25);
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 3px 2px #f1f1f1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero img {
+    border-radius: 15px;
+}
+
+.navigat li {
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.9rem;
+    max-width: 1100px;
+    margin: 1rem auto -6rem;
+}
+
+.intro {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: var(--line-height);
+}
+
+.cover {
+    text-align: left;
+}
+
+.learn, .hire {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 0.6rem;
+    border: 2px solid #fff;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.learn {
+    background-color: var(--secondary-color);
+    border-color: transparent;
+    color: #fff;
+}
+
+.learn:hover {
+    background-color: transparent;
+    border-color: red;
+    color: red;
+    text-shadow: 0 0 5px #ff0000;
+}
+
+.hire {
+    background-color: transparent;
+    color: red;
+    border: transparent;
+}
+
+.hire:hover {
+    background-color: red;
+    color: #fff;
+    text-shadow: 0 0 5px white;
+}
+
+.about, .education, .projects {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 150px;
+}
+
+.contact {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 150px;
+}
+
+.aboutme li {
+    list-style: none;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    opacity: 75%;
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+.column {
+    /* float: left; */
+    width: 40%;
+    padding: 0 20px;
+}
+
+.sclname, .proname {
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.fa {
+    padding: 10px;
+    font-size: 48px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 2px;
+}
+
+.contact h3, .projects h3, .education h3, .contact h3 {
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container input[type=text],input[type=textarea],input[type=email] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    flex: 1;
+}
+
+.container .submit {
+    min-height: 12px;
+    background-color: transparent;
+    border-color: blue;
+    color: blue;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container .submit:hover {
+    background-color: blue;
+    border-color: transparent;
+    color: white;
+}
+
+.container td {
+    padding: 10px;
+}
+
+.container .column{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+a:hover {
+    color: white;
+    text-shadow: 0 0 5px blue;
+}
+
+a {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.popup p:hover {
+    font-weight: bold;
+}

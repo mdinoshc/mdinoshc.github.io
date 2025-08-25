@@ -1,12 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="shadow.css"  type="text/css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="rectangle"></div>
-</body>
+<html>
+    <head>
+        <title>
+            Landing Page
+        </title>
+        <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css"/>
+        <script src="scripts/script.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css">
+    </head>
+    <body>
+        <nav>
+            <a class="logo" href="#">
+                <h1>
+                    <img src="pics/Untitled-1.png" width="100px" height="50px"/>
+                </h1>
+            </a>
+            <div class="navigat">
+                <ul>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navline">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <section>
+            <div class="cover">
+                <h1 class="intro">
+                    <span class="name">Hi I'm Dinosh Chriton</span><br>
+                    <span class="job">Software Engineer</span>
+                </h1>
+                <p>
+                    Beginner with experience of android and web development.
+                </p>
+                <a href="#about" class="learn">Learn more</a>
+                <a href="https://www.linkedin.com/in/dinosh-chriton-323846185/" target="_blank" class="hire">Hire me</a>
+            </div>
+            <div class="hero">
+                <img src="pics/profile/profile.jpg" class="profile" width="380" height="480"/>
+            </div>
+        </section>
+        <div class="about" id="about">
+            <ul class="aboutme">
+                    <li><h2>M.Dinosh Chriton (Bachelor in CS.)</h2></li>
+                    <li><p><b>❯❯ </b>+94778457322</p></li>
+                    <li><p><b>❯❯ </b>mdinoshc@gmail.com</p></li>
+                    <li><p><b>❯❯ </b>Bandarawela, Badulla, SriLanka.</p></li>
+                    <li><p><b>❯❯ </b>Male</p></li>
+                    <li><p><b>❯❯ </b>25 years of age.</p></li>
+            </ul>
+        </div>
+
+        <div class="education" id="education">
+            <h3>Education</h3><hr>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="pics/school logos/pngkey.png" style="width: 100%"/>
+                        <p class="sclname">St.Thomas College, Bandarawela</p>
+                        <p><a href="https://www.stcb.edu.lk" target="_blank" class="scllink">visit website</a></p>
+                        <p>G.C.E. Ordinary Level - 2013</p>
+                        <p>Result: A-4, B-4, C-1</p>
+                        <div class="popup" onclick="myFunction1()">
+                            <p>view result</p>
+                            <span class="popuptext" id="myPopup1">
+                                <table>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Grade</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Religion</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tamil</td>
+                                        <td>B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>English</td>
+                                        <td>B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Science</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mathematics</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>History</td>
+                                        <td>B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sinhala - 2nd lang.</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Art</td>
+                                        <td>C</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Health & Physical</td>
+                                        <td>B</td>
+                                    </tr>
+                                </table>
+                            </span>
+                        </div>
+                        <p>2003 - 2013</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="pics/school logos/index.jpg" style="width: 100%"/>
+                        <p class="sclname">St.John Bosco's College, Hatton.</p>
+                        <p><a href="https://www.facebook.com/StJohnBoscosCollegeHatton/" target="_blank" class="scllink">visit website</a></p>
+                        <p>G.C.E. Advanced Level - 2016</p>
+                        <p>Result(1st attempt): B-1, C-2</p>
+                        <div class="popup" onclick="myFunction2()">
+                            <p>view result</p>
+                            <span class="popuptext" id="myPopup2">
+                                <table>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Grade</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Chemistry</td>
+                                        <td>C</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Physics</td>
+                                        <td>C</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Combined Mathematics</td>
+                                        <td>B</td>
+                                    </tr>
+                                    <tr>
+                                        <td>General English</td>
+                                        <td>C</td>
+                                    </tr>
+                                    <tr>
+                                        <td>General Knowledge</td>
+                                        <td>55%</td>
+                                    </tr>
+                                </table>
+                            </span>
+                        </div>
+                        <p>Result(2nd attempt): A-1, C-2</p>
+                        <div class="popup" onclick="myFunction3()">
+                            <p>view result</p>
+                            <span class="popuptext" id="myPopup3">
+                                <table>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Grade</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Chemistry</td>
+                                        <td>C</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Physics</td>
+                                        <td>C</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Combined Mathematics</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>General English</td>
+                                        <td>C</td>
+                                    </tr>
+                                    <tr>
+                                        <td>General Knowledge</td>
+                                        <td>58%</td>
+                                    </tr>
+                                </table>
+                            </span>
+                        </div>
+                        <p>2014 - 2016</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="pics/school logos/index.png" style="width: 100%"/>
+                        <p class="sclname">Trincomalee campus, Eastern University.</p>
+                        <p><a href="http://www.tc.esn.ac.lk/" target="_blank" class="scllink">visit website</a></p>
+                        <p>Computer Science Undergraduate</p>
+                        <p>2019 - present</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects" id="projects">
+            <h3>Projects</h3><hr>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="pics/project screenshots/cal_app/numcal.jpg" style="width: 100%"/>
+                        <p class="proname">Mini number calculator</p>
+                        <p><a href="https://github.com/mdinoshc/flutter_cal.git" target="_blank">view project</a></p>
+                        <p>Languages: Flutter</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="pics/project screenshots/pwd_gen_app/pwdgen.jpg" style="width: 100%"/>
+                        <p class="proname">Password Generator</p>
+                        <p><a href="https://github.com/mdinoshc/password_generator_android.git" target="_blank">view project</a></p>
+                        <p>Languages: Flutter</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <h3>Contact me</h3><hr>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <!-- <i class="fas fa-search-location"></i> -->
+                        <h4>My Address</h4>
+                        <p>No.43, North Kabillewela, Bandarawela.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="column">
+                    <div class="card">
+                        <!-- <i class="fas fa-share-alt"></i> -->
+                        <h4>Social Profiles</h4>
+                        <a href="https://www.facebook.com/dinosh.chriton/" target="_blank" class="fa fa-facebook fa-2x"></a>
+                        <a href="https://www.instagram.com/m__d__i__n__o__s__h/" target="_blank" class="fa fa-instagram fa-2x"></a>
+                        <a href="https://www.linkedin.com/in/dinosh-chriton-323846185/" target="_blank" class="fa fa-linkedin fa-2x"></a>
+                        <a href="https://twitter.com/MChriton" target="_blank" class="fa fa-twitter fa-2x"></a>
+                        <a href="https://www.youtube.com/channel/UCMf-AJWm1NQy-ahKUnbbdmQ" target="_blank" class="fa fa-youtube fa-2x"></a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <!-- <i class="fas fa-envelope"></i> -->
+                        <h4>Email Me</h4>
+                        <p>mdinoshc@gmail.com</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <!-- <i class="fas fa-phone"></i> -->
+                        <h4>Call Me</h4>
+                        <p>+9477 8457 322</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container">
+                <form>
+                    <table>
+                        <tr>
+                            <td><input type="text" placeholder="Your Name" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" placeholder="Your Email" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Your Subject" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="textarea" placeholder="Message" style="height: 200px" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Submit" class="submit" required></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
 </html>
