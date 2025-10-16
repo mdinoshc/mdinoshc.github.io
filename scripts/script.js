@@ -40,3 +40,15 @@ function SubmitClk() {
     });
 }
 
+function closeNav() {
+    debugger
+    document.getElementById("sidemenu_Navigat").style.display = none;
+    document.getElementById("navbar").style.display = flex;
+}
+
+function openNav() {
+    debugger
+    document.getElementById("sidemenu_Navigat").style.display = flex;
+    document.getElementById("navbar").style.display = none;
+}
+
