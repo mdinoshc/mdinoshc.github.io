@@ -1,54 +1,56 @@
-function myFunction1() {
-    var popup = document.getElementById("myPopup1");
-    popup.classList.toggle("show");
-}
-
-function myFunction2() {
-    var popup = document.getElementById("myPopup2");
-    popup.classList.toggle("show");
-}
-
-function myFunction3() {
-    var popup = document.getElementById("myPopup3");
-    popup.classList.toggle("show");
-}
-
-
 
 function SubmitClk() {
-    const bttn = document.getElementById('submit');
+    // const bttn = document.getElementById('submit');
 
-    document.getElementById('contactForm').addEventListener('submit', function (event) {
-        event.preventDefault();
+    // document.getElementById('contactForm').addEventListener('submit', function (event) {
+    //     event.preventDefault();
 
-        bttn.value = 'Submitting...';
+    //     bttn.value = 'Submitting...';
 
-        const serviceID = 'default_service';
-        const templateID = 'template_l49lxox';
+    //     const serviceID = 'default_service';
+    //     const templateID = 'template_l49lxox';
 
-        emailjs.sendForm(serviceID, templateID, this).then(() => {
-            bttn.value = 'Submit';
-            alert('Sent!');
-            document.getElementsByClassName("name").value = '';
-            document.getElementsByClassName("email").value = '';
-            document.getElementsByClassName("subject").value = '';
-            document.getElementsByClassName("Message").value = '';
-        }, (err) => {
-            bttn.value = 'Submit';
-            alert(JSON.stringify(err));
-        });
-    });
+    //     emailjs.sendForm(serviceID, templateID, this).then(() => {
+    //         bttn.value = 'Submit';
+    //         alert('Sent!');
+    //         document.getElementsByClassName("name").value = '';
+    //         document.getElementsByClassName("email").value = '';
+    //         document.getElementsByClassName("subject").value = '';
+    //         document.getElementsByClassName("Message").value = '';
+    //     }, (err) => {
+    //         bttn.value = 'Submit';
+    //         alert(JSON.stringify(err));
+    //     });
+    // });
+
+    let params = {
+        name: document.getElementsByClassName("name").value,
+        email: document.getElementsByClassName("email").value,
+        subject: document.getElementsByClassName("subject").value,
+        message: document.getElementsByClassName("Message").value,
+    }
+
+    if(params.name === "" || params.email === "" || params.subject === "" || params.message === "") {
+        alert("Please fill in all the fields.");
+        return;
+    } else {
+        // emailjs.send("service_d4ya65a", "template_l49lxox", params).then(alert("Your Email has been sent!"));
+    }
 }
 
-function closeNav() {
-    debugger
-    document.getElementById("sidemenu_Navigat").style.display = none;
-    document.getElementById("navbar").style.display = flex;
+function openMenu() {
+  document.querySelector('.drawer').classList.add('active');
+  document.querySelector('.overlay').classList.add('active');
 }
 
-function openNav() {
-    debugger
-    document.getElementById("sidemenu_Navigat").style.display = flex;
-    document.getElementById("navbar").style.display = none;
+function closeMenu() {
+  document.querySelector('.drawer').classList.remove('active');
+  document.querySelector('.overlay').classList.remove('active');
 }
+
+document.querySelectorAll('.drawer-link').forEach(link => {
+    link.addEventListener('click', () => {
+        closeMenu();
+    })
+})
 
