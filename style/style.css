@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 :root {
     --normal-font: 400;
     --bold-font: 600;
@@ -16,7 +18,7 @@
 }
 
 body {
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .logo h1 {
@@ -57,27 +59,34 @@ html {
 
 .sidemenu_navigat {
     display: none;
-    align-items: right;
+    text-align: right;
 }
 
-/* Mobile and TAB menu */
-@media (max-width: 1000px) {
-    .navigat {
-        display: none;
-    }
+.mobile_section {
+    display: none;
+    text-align: center;
+}
 
-    .sidemenu_navigat {
-        display: flex;
-        text-align: right;
-    }
+.mob_education,
+.mob_professional,
+.mob_contact,
+.mob_projects {
+    display: none;
+}
 
-    .navigat .active {
-        display: flex;
-    }
+.mobile_section .cover {
+    text-align: center;
+}
 
-    .navbar {
-        display: none;
-    }
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15%;
+    padding-top: 5%;
+    max-height: 100%;
+    max-width: 80%;
+    margin: 1rem auto -6rem;
 }
 
 a:link,
@@ -124,24 +133,13 @@ nav {
     color: var(--primary-color);
 }
 
-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 15%;
-    padding-top: 5%;
-    max-height: 100%;
-    max-width: 80%;
-    margin: 1rem auto -6rem;
-}
-
 .intro {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 p {
-    line-height: var(--line-height);
+    line-height: 30px;
 }
 
 .cover {
@@ -200,23 +198,18 @@ p {
 .education,
 .projects,
 .professional,
-.contact {
+.contact,
+.mob_education,
+.mob_professional,
+.mob_contact,
+.mob_projects,
+.mob_contact {
     justify-content: center;
     margin: 1rem auto -5rem;
-    padding-top: 5%;
+    padding-top: 7.5%;
     padding-bottom: 15%;
     max-width: 80%;
     max-height: 100%;
-}
-
-/* Mobile and TAB Menu */
-@media (max-width: 1000px) {
-    .education,
-    .projects,
-    .professional,
-    .contact {
-        padding-top: 20%;
-    }
 }
 
 .Education,
@@ -227,6 +220,7 @@ p {
     padding: 10px 10px 10px 10px;
     background-color: var(--primary-color);
     color: #fff;
+    max-height: 100%;
 }
 
 .education row {
@@ -242,6 +236,7 @@ p {
     color: #fff;
     font-size: 18px;
     font-weight: bold;
+    line-height: 1;
 }
 
 .row {
@@ -278,7 +273,31 @@ input[type=email] {
     width: 100%;
 }
 
+.mob_contact input[type=text],
+input[type=textarea],
+input[type=email] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 100%;
+}
+
 .contact .submit {
+    min-height: 12px;
+    background-color: transparent;
+    border-color: blue;
+    color: blue;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.mob_contact .submit {
     min-height: 12px;
     background-color: transparent;
     border-color: blue;
@@ -298,7 +317,17 @@ input[type=email] {
     color: white;
 }
 
+.mob_contact .submit:hover {
+    background-color: blue;
+    border-color: transparent;
+    color: white;
+}
+
 .contact td {
+    padding: 10px;
+}
+
+.mob_contact td {
     padding: 10px;
 }
 
@@ -321,6 +350,184 @@ a {
 .professional a:hover {
     color: white;
     text-shadow: 0 0 3px var(--primary-color);
+}
+
+/* Menu icon (hidden on desktop) */
+.menu-icon {
+  display: none;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+/* Drawer */
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -50%;
+  width: 50%;
+  height: 100%;
+  background: var(--primary-color);
+  padding: 60px 20px;
+  transition: right 0.3s ease;
+  z-index: 1001;
+  display: none;
+}
+
+.drawer a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-top: 70px;
+  font-size: 18px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 80px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 1000;
+}
+
+/* Active states */
+.drawer.active {
+  right: 0;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* Mobile and TAB menu */
+@media (max-width: 1000px) {
+    .navigat {
+        display: none;
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .drawer {
+        display: block;
+    }
+
+    .drawer a{
+        font-size: 40px;
+    }
+
+    section {
+        display: none;
+    }
+
+    .education,
+    .projects,
+    .professional,
+    .contact {
+        display: none;
+    }
+
+    .mobile_section,
+    .mob_education,
+    .mob_professional,
+    .mob_contact,
+    .mob_projects {
+        display: flex;
+    }
+
+    .scllink {
+        font-size: 40px;
+    }
+
+    .sclname {
+        font-size: 40px;
+    }
+
+    .proname,
+    .projectt {
+        font-size: 40px;
+        line-height: 1;
+    }
+
+    .sidemenu_navigat {
+        display: flex;
+    }
+
+    .sidemenu_navigat ul {
+        font-size: 60px;
+    }
+
+    .navigat .active {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .mobProf {
+        line-height: 1;
+        font-size: 40px;
+    }
+
+    .compname {
+        line-height: 1.2;
+        font-size: 40px;
+    }
+
+    .mob_contact .name,
+    .mob_contact .email,
+    .mob_contact .Message,
+    .mob_contact .subject,
+    .mob_contact .submit {
+        font-size: 40px;
+        margin-top: 5%;
+    }
+
+    .mob_education .Education,
+    .mob_projects .Projects,
+    .mob_professional .Professional {
+        border: 2px solid var(--primary-color);
+        border-radius: 20px;
+        padding: 25px 10px 55px 10px;
+        background-color: var(--primary-color);
+        color: #fff;
+        max-height: 100%;
+    }
+
+
+    footer {
+        font-size: 20px;
+    }
+}
+
+/* Mobile and TAB Menu */
+@media (max-width: 1000px) {
+
+    .education,
+    .projects,
+    .professional,
+    .contact,
+    .mobile_section,
+    .mob_education,
+    .mob_professional,
+    .mob_contact,
+    .mob_projects {
+        padding-top: 15%;
+    }
 }
 
 .popup {
