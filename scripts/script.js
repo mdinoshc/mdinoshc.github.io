@@ -1,28 +1,6 @@
 
 function SubmitClk() {
-    // const bttn = document.getElementById('submit');
-
-    // document.getElementById('contactForm').addEventListener('submit', function (event) {
-    //     event.preventDefault();
-
-    //     bttn.value = 'Submitting...';
-
-    //     const serviceID = 'default_service';
-    //     const templateID = 'template_l49lxox';
-
-    //     emailjs.sendForm(serviceID, templateID, this).then(() => {
-    //         bttn.value = 'Submit';
-    //         alert('Sent!');
-    //         document.getElementsByClassName("name").value = '';
-    //         document.getElementsByClassName("email").value = '';
-    //         document.getElementsByClassName("subject").value = '';
-    //         document.getElementsByClassName("Message").value = '';
-    //     }, (err) => {
-    //         bttn.value = 'Submit';
-    //         alert(JSON.stringify(err));
-    //     });
-    // });
-
+  
     let params = {
         name: document.getElementsByClassName("name").value,
         email: document.getElementsByClassName("email").value,
