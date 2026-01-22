@@ -12,7 +12,7 @@ function SubmitClk() {
         alert("Please fill in all the fields.");
         return;
     } else {
-        // emailjs.send("service_d4ya65a", "template_l49lxox", params).then(alert("Your Email has been sent!"));
+        // DO SOMETHING WITH THE FORM DATA
     }
 }
 
