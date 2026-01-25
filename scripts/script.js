@@ -1,11 +1,5 @@
 import config from './config.js';
 
-(function () {
-        emailjs.init({
-          publicKey: config.publicKey,
-        });
-      })();
-
 function openMenu() {
     document.querySelector('.drawer').classList.add('active');
     document.querySelector('.overlay').classList.add('active');
@@ -71,6 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     })
 });
+
+(function () {
+        emailjs.init({
+          publicKey: config.publicKey,
+        });
+      })();
 
 
 
