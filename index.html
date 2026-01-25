@@ -4,7 +4,7 @@
     <title>M. Dinosh Chriton</title>
     <meta charset="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
-    <script src="scripts/script.js"></script>
+    <script type="module" src="scripts/script.js"></script>
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
@@ -18,29 +18,6 @@
       rel="stylesheet"
       type="text/css"
     />
-
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-
-    <script type="text/javascript">
-      emailjs.init("RX57xkTTlmDEyGf0d");
-    </script>
-
-    <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HB5F16YLJJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-HB5F16YLJJ');
-  </script>
-
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9522304463763432"
-     crossorigin="anonymous"></script>
-  
   </head>
 
   <body>
@@ -74,15 +51,36 @@
       <div class="overlay" onclick="closeMenu()"></div>
 
       <div class="drawer">
-        <ul style="list-style-type: none;">
+        <ul style="list-style-type: none">
           <li>
             <span class="close-btn" onclick="closeMenu()">×</span>
           </li>
-          <li><a href="#" onclick="closeMenu()" class="drawer-link">ABOUT</a></li>
-          <li><a href="#mob_education" onclick="closeMenu()" class="drawer-link">EDUCATION</a></li>
-          <li><a href="#mob_professional" onclick="closeMenu()" class="drawer-link">PROFESSIONAL</a></li>
-          <li><a href="#mob_projects" onclick="closeMenu()" class="drawer-link">PROJECTS</a></li>
-          <li><a href="#mob_contact" onclick="closeMenu()" class="drawer-link">CONTACT</a></li>
+          <li>
+            <a href="#" onclick="closeMenu()" class="drawer-link">ABOUT</a>
+          </li>
+          <li>
+            <a href="#mob_education" onclick="closeMenu()" class="drawer-link"
+              >EDUCATION</a
+            >
+          </li>
+          <li>
+            <a
+              href="#mob_professional"
+              onclick="closeMenu()"
+              class="drawer-link"
+              >PROFESSIONAL</a
+            >
+          </li>
+          <li>
+            <a href="#mob_projects" onclick="closeMenu()" class="drawer-link"
+              >PROJECTS</a
+            >
+          </li>
+          <li>
+            <a href="#mob_contact" onclick="closeMenu()" class="drawer-link"
+              >CONTACT</a
+            >
+          </li>
         </ul>
       </div>
     </nav>
@@ -333,7 +331,7 @@
             <br />
             <div class="row">
               <div class="card">
-                 <ul
+                <ul
                   style="
                     list-style: none;
                     padding-bottom: 10%;
@@ -506,6 +504,14 @@
                   <tr>
                     <td>
                       <p class="proname">Numeric Calculator</p>
+                      <p>
+                        <a
+                          class="projectt"
+                          href="https://github.com/mdinoshc/flutter_cal.git"
+                          target="_blank"
+                          >view project</a
+                        >
+                      </p>
                       <p>Languages: Dart | Kotlin | Java</p>
                       <p>
                         Tools and technologies: Flutter | Android Studio |
@@ -523,6 +529,14 @@
                   <tr>
                     <td>
                       <p class="proname">Password Generator</p>
+                      <p>
+                        <a
+                          class="projectt"
+                          href="https://github.com/mdinoshc/password_generator_android.git"
+                          target="_blank"
+                          >view project</a
+                        >
+                      </p>
                       <p>Languages: Dart | Kotlin | Java</p>
                       <p>
                         Tools and technologies: Flutter | Android Studio |
@@ -541,6 +555,14 @@
                     <td>
                       <p class="proname">
                         Rotten Fruit and Vegetable Detection Application
+                      </p>
+                      <p>
+                        <a
+                          class="projectt"
+                          href="https://github.com/mdinoshc/fyp_dinosh.git"
+                          target="_blank"
+                          >view project</a
+                        >
                       </p>
                       <p>Languages: Dart | Kotlin | Java | Python</p>
                       <p>
@@ -580,6 +602,16 @@
                 >
                   <li><p class="proname">Numeric Calculator</p></li>
                   <li>
+                    <p>
+                      <a
+                        class="projectt"
+                        href="https://github.com/mdinoshc/flutter_cal.git"
+                        target="_blank"
+                        >view project</a
+                      >
+                    </p>
+                  </li>
+                  <li>
                     <p>Languages: Dart | Kotlin | Java</p>
                   </li>
                   <li>
@@ -605,6 +637,16 @@
                   "
                 >
                   <li><p class="proname">Password Generator</p></li>
+                  <li>
+                    <p>
+                      <a
+                        class="projectt"
+                        href="https://github.com/mdinoshc/password_generator_android.git"
+                        target="_blank"
+                        >view project</a
+                      >
+                    </p>
+                  </li>
                   <li>
                     <p>Languages: Dart | Kotlin | Java</p>
                   </li>
@@ -633,6 +675,16 @@
                   <li>
                     <p class="proname">
                       Rotten Fruit and Vegetable Detection Application
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <a
+                        class="projectt"
+                        href="https://github.com/mdinoshc/fyp_dinosh.git"
+                        target="_blank"
+                        >view project</a
+                      >
                     </p>
                   </li>
                   <li>
@@ -666,37 +718,47 @@
             <form id="contactForm">
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name"
                 class="name"
                 required
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Your Email"
                 class="email"
                 required
               />
               <input
                 type="text"
+                name="subject"
                 placeholder="Your Subject"
                 class="subject"
                 required
               />
-              <input
-                type="textarea"
+              <input type="text"
+                name="message"
                 placeholder="Message"
                 class="Message"
                 style="height: 200px"
                 required
-              />
-              <input
-                type="submit"
-                class="submit"
-                id="submit"
-                value="Submit"
-                onclick="SubmitClk()"
-              />
+              >
+              <input type="submit" id="button" class="submit" value="Submit" />
             </form>
+
+            <script
+              type="text/javascript"
+              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+            ></script>
+            <script type="text/javascript">
+              (function () {
+                emailjs.init({
+                  publicKey: "RX57xkTTlmDEyGf0d",
+                });
+              })();
+            </script>
+
             <p>For more details please contact:</p>
             <ul style="list-style: none">
               <li>
@@ -718,40 +780,38 @@
         </li>
         <li>
           <div>
-            <form id="contactForm">
+            <form id="contactFormMobile">
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name"
                 class="name"
                 required
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Your Email"
                 class="email"
                 required
               />
               <input
                 type="text"
+                name="subject"
                 placeholder="Your Subject"
                 class="subject"
                 required
               />
-              <input
-                type="textarea"
+              <input type="text"
+                name="message"
                 placeholder="Message"
                 class="Message"
                 style="height: 200px"
                 required
-              />
-              <input
-                type="submit"
-                class="submit"
-                id="submit"
-                value="Submit"
-                onclick="SubmitClk()"
-              />
+              >
+              <input type="submit" id="buttonMobile" class="submit" value="Submit" />
             </form>
+
             <p style="font-size: 40px; margin-top: 10%">
               For more details please contact:
             </p>
@@ -768,11 +828,16 @@
               </li>
               <li><i class="fa fa-envelope"></i>mdinoshc@gmail.com</li>
               <li><i class="fa fa-map-marker"></i>Sri Lanka</li>
-            </ul>            
+            </ul>
           </div>
         </li>
       </ul>
     </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
 
     <!-- FOOTER SECTION -->
     <footer style="text-align: center; color: #333333">
