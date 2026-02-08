@@ -8,7 +8,7 @@ function SubmitClk() {
         message: document.getElementsByClassName("Message").value,
     }
 
-    if(params.name === "" || params.email === "" || params.subject === "" || params.message === "") {
+   if(params.name === "" || params.email === "" || params.subject === "" || params.message === "") {
         alert("Please fill in all the fields.");
         return;
     } else {
@@ -21,6 +21,14 @@ function SubmitClk() {
             alert("Failed to send email. Please try again.");
             });
     }
+}
+
+    
+}
+
+function openMenu() {
+  document.querySelector('.drawer').classList.add('active');
+  document.querySelector('.overlay').classList.add('active');
 }
 
 function openMenu() {
