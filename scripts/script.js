@@ -8,12 +8,27 @@ function SubmitClk() {
         message: document.getElementsByClassName("Message").value,
     }
 
-    if(params.name === "" || params.email === "" || params.subject === "" || params.message === "") {
+   if(params.name === "" || params.email === "" || params.subject === "" || params.message === "") {
         alert("Please fill in all the fields.");
         return;
     } else {
-        // emailjs.send("service_d4ya65a", "template_l49lxox", params).then(alert("Your Email has been sent!"));
+        // DO SOMETHING WITH THE FORM DATA
+        // Example using EmailJS to send the form data
+        emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", params)
+            .then((response) => {
+            alert("Email sent successfully!");
+            }, (error) => {
+            alert("Failed to send email. Please try again.");
+            });
     }
+}
+
+    
+}
+
+function openMenu() {
+  document.querySelector('.drawer').classList.add('active');
+  document.querySelector('.overlay').classList.add('active');
 }
 
 function openMenu() {
