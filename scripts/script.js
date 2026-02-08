@@ -23,9 +23,6 @@ function SubmitClk() {
     }
 }
 
-    
-}
-
 function openMenu() {
   document.querySelector('.drawer').classList.add('active');
   document.querySelector('.overlay').classList.add('active');
