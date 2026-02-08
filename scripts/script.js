@@ -13,6 +13,13 @@ function SubmitClk() {
         return;
     } else {
         // DO SOMETHING WITH THE FORM DATA
+        // Example using EmailJS to send the form data
+        emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", params)
+            .then((response) => {
+            alert("Email sent successfully!");
+            }, (error) => {
+            alert("Failed to send email. Please try again.");
+            });
     }
 }
 
