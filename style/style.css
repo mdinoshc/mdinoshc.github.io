@@ -385,7 +385,7 @@ a {
   position: absolute;
   top: 15px;
   right: 20px;
-  font-size: 80px;
+  font-size: 100%;
   cursor: pointer;
   color: white;
 }
@@ -426,7 +426,7 @@ a {
     }
 
     .drawer a{
-        font-size: 40px;
+        font-size: 100%;
     }
 
     section {
@@ -449,16 +449,16 @@ a {
     }
 
     .scllink {
-        font-size: 40px;
+        font-size: 100%;
     }
 
     .sclname {
-        font-size: 40px;
+        font-size: 100%;
     }
 
     .proname,
     .projectt {
-        font-size: 40px;
+        font-size: 100%;
         line-height: 1;
     }
 
@@ -467,7 +467,7 @@ a {
     }
 
     .sidemenu_navigat ul {
-        font-size: 60px;
+        font-size: 100%;
     }
 
     .navigat .active {
@@ -480,12 +480,12 @@ a {
 
     .mobProf {
         line-height: 1;
-        font-size: 40px;
+        font-size: 100%;
     }
 
     .compname {
         line-height: 1.2;
-        font-size: 40px;
+        font-size: 100%;
     }
 
     .mob_contact .name,
@@ -493,7 +493,7 @@ a {
     .mob_contact .Message,
     .mob_contact .subject,
     .mob_contact .submit {
-        font-size: 40px;
+        font-size: 100%;
         margin-top: 5%;
     }
 
@@ -510,7 +510,7 @@ a {
 
 
     footer {
-        font-size: 20px;
+        font-size: 100%;
     }
 }
 
