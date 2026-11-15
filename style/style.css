@@ -108,7 +108,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    padding-left: 150px;
+    padding-left: 10%;
     padding-right: 150px;
     position: sticky;
     top: 0;
@@ -378,14 +378,14 @@ a {
   color: white;
   text-decoration: none;
   margin-top: 70px;
-  font-size: 18px;
+  /* font-size: 100%; */
 }
 
 .close-btn {
   position: absolute;
   top: 15px;
   right: 20px;
-  font-size: 100%;
+  /* font-size: 100%; */
   cursor: pointer;
   color: white;
 }
@@ -419,6 +419,11 @@ a {
 
     .menu-icon {
         display: block;
+    }
+
+    nav img {
+        display: block;
+        margin-left: 0;
     }
 
     .drawer {
